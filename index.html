@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idoso Seguro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ Idoso Seguro</h1>
+
+        <p>
+            Verifique mensagens, notícias e links antes de compartilhar.
+        </p>
+
+        <textarea
+            id="texto"
+            placeholder="Cole ou digite aqui uma mensagem, notícia ou link para verificar..."
+        ></textarea>
+
+        <button onclick="analisar()">
+            Verificar Informação
+        </button>
+
+        <div id="resultado"></div>
+
+        <div class="historico">
+            <h2>📋 Últimas Verificações</h2>
+
+            <ul id="listaHistorico">
+                <li>Nenhuma verificação realizada.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
