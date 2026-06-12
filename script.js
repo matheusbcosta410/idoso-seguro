@@ -8,7 +8,6 @@ async function analisar() {
 
         resultado.style.display = "block";
         resultado.className = "alerta";
-
         resultado.innerHTML =
             "⚠️ Digite uma mensagem ou cole um link.";
 
@@ -22,7 +21,7 @@ async function analisar() {
     try {
 
         const resposta = await fetch(
-            "http://localhost:3000/analisar",
+            "/analisar",
             {
                 method: "POST",
                 headers: {
